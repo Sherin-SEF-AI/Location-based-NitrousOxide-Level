@@ -151,7 +151,7 @@ class LocationBasedNitrousOxideApp(QWidget):
         try:
             conn = http.client.HTTPSConnection("map-geocoding.p.rapidapi.com")
             headers = {
-                'x-rapidapi-key': "2d7198105fmsha78df4c828aea6ep182ce4jsn6a513052a904",
+                'x-rapidapi-key': "",
                 'x-rapidapi-host': "map-geocoding.p.rapidapi.com"
             }
             formatted_location = location_query.replace(" ", "%20")
@@ -178,7 +178,7 @@ class LocationBasedNitrousOxideApp(QWidget):
         try:
             conn = http.client.HTTPSConnection("atmosphere-nitrous-oxide-levels.p.rapidapi.com")
             headers = {
-                'x-rapidapi-key': "2d7198105fmsha78df4c828aea6ep182ce4jsn6a513052a904",
+                'x-rapidapi-key': "",
                 'x-rapidapi-host': "atmosphere-nitrous-oxide-levels.p.rapidapi.com"
             }
             conn.request("GET", f"/api/nitrous-oxide-api?location={location}", headers=headers)
